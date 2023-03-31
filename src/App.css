@@ -42,6 +42,7 @@
   height: 2.5rem;
   border: 1px solid black;
   border-radius: 25px;
+  font-size: large;
 }
 button{
   background-color: red;
@@ -69,3 +70,32 @@ button{
 
 
 /* ------BODY------------------------------------------- */
+
+.card-container{
+  border: 1px solid black;
+  margin: 10px;
+  width: 16rem;
+  height: 20rem;
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: #FFCCCB;
+
+
+}
+.card-container img{
+  width: 100%;
+
+}
+#restaurant-name{
+  align-content: center;
+}
+
+
+.restaurant-info{
+  display: flex;
+  justify-content: space-between;
+
+}
