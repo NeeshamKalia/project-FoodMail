@@ -23,9 +23,33 @@ const Header = () =>(
     </div>
   </div>
 )
-
+/* -----body-------- */
+const burgerKing = {
+  image: "url",
+  name: "Burger King",
+  cuisines: ["Chinese", "Italian",],
+  rating: 4.2,
+  distance: 0.9
+}
 
 const Restaurant = () => (
+  <div className='card-container'>
+    <img className='card-pic' src={restaurantpic} alt='restaurant' />
+    <div id = "restaurant-name">
+    <h3>{burgerKing.name}</h3>
+    </div>
+    <h4>{(burgerKing.cuisines).join(", ")}</h4>
+    <div className='restaurant-info'>
+      <h5>{burgerKing.rating} Stars</h5>
+      <h5>{burgerKing.distance}KM away</h5>
+    </div>
+  </div>
+)
+
+/*
+
+----hard coding the component-----
+ const Restaurant = () => (
   <div className='card-container'>
     <img className='card-pic' src={restaurantpic} alt='restaurant' />
     <div id = "restaurant-name">
@@ -36,9 +60,8 @@ const Restaurant = () => (
       <h5>0.7 Stars</h5>
       <h5>0.5KM away</h5>
     </div>
-
   </div>
-)
+) */
 const Body = () =>(
   <div className='body'>
     <Restaurant />
